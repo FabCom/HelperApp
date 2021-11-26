@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  category: one
+  deadline: 2021-11-24 11:42:44
+  status: false
+
+two:
+  title: MyString
+  category: two
+  deadline: 2021-11-24 11:42:44
+  status: false

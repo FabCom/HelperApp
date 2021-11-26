@@ -1,0 +1,16 @@
+<div class="card border-dark mb-3 m-3" style="max-width: 20rem;" id="category-<%= category.id %>" >
+  <div class="card-body">
+    <h4 class="card-title"><%= category.title %> </h4>
+    <p class="card-text text-center">
+      <%= link_to category do %>
+        <i class="far fa-eye text-success"></i>
+      <% end %>
+      <%= link_to edit_category_path(category) do %>
+        <i class="far fa-edit text-info"></i>
+      <% end %>
+      <%= link_to category, method: :delete, data: { confirm: 'Are you sure?' }, remote: true do %>
+        <i class="far fa-trash-alt text-danger"></i>
+      <% end %>
+    </p>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<%@categories.each do |category|%>
+  <div class="d-flex flex-column p-2">
+    <%= category.title%>
+    <div class="list-group">
+      <%@tasks.each do |task|%>    
+        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1"><%=task.title%></h5>
+            <small><%p category; puts "#" * 20%></small>
+          </div>
+        </a>
+      <%end%>
+    </div>
+  </div>
+<%end%>

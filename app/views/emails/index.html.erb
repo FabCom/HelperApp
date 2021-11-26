@@ -1,0 +1,12 @@
+<h1>Emails 
+<%= link_to new_email_path, remote: true do %>
+  <i class="far fa-plus text-success"></i>
+<% end %>
+</h1>
+<div class="d-flex p-5">
+  <div class="d-flex p-3 flex-column" style="width:40%">
+    <%=render "list"%>
+  </div>
+  <div class="d-flex p-3 flex-column" id="email-show" style="width:60%">
+  </div>  
+</div>
